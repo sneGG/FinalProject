@@ -1,0 +1,140 @@
+body {background: url(Awesome-Logo-Manchester-United-Wallpaper.jpg) center; background-attachment: fixed; font-family: 'Oswald', sans-serif;
+}
+.icon {
+     position:fixed; 
+     margin-top:52px;
+     display:block;
+     
+}
+
+div.navbar {font-family: 'Oswald', sans-serif;
+    background-color: #850707;
+    font-size: 19px;
+    
+}
+.dropdown-menu {
+    background-color: #000000;
+    font-size: 16px;
+    color: #850707;
+    }
+.dropdown-menu > li > a {
+    color: #850707;
+}
+.navbar-text{
+    color: #000000;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #000;
+}
+.navbar-inverse .navbar-brand {
+    color: #000000;
+    font-size: 26px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #000000;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    line-height: 1;
+    margin-right: auto;
+    margin-left: auto;
+}
+.caption {width: 250px;
+    height: 200px;
+    border: solid 3px red;
+    border-radius: 8px;
+    box-shadow: 0 0 15px red inset;
+    margin-top: 7px;
+    background-color: rgba(255, 255, 255, 0.466);
+    
+ }
+ .caption1 {width: 300px;
+    margin: 5% auto;
+    height: auto;
+    border: solid 3px red;
+    border-radius: 8px;
+    box-shadow: 0 0 15px red inset;
+    margin-top: 7px;
+    background-color: rgb(255, 253, 253);
+    text-align: center;    
+ }
+ .caption3 {
+    overflow: hidden; 
+    width: 400px;
+    margin: 5% auto;
+    height: 120px;
+    box-shadow: 0 0 50px red inset;
+    margin-top: 7px;
+    margin-left: 30px;
+    background-color: rgba(255, 253, 253, 0.096);
+    text-align: center;    
+
+ }
+ .p1{
+     font-size: 50px;
+     font-weight: bold; 
+     color: rgb(255, 255, 255);
+     /*-webkit-text-stroke: 1px rgb(0, 0, 0);*/
+     text-align: center;
+      }
+      .p1:hover{
+        color: rgb(124, 0, 0);
+        
+      } 
+      .p2{
+        font-size: 80px;
+        font-weight: bold; 
+        color: rgb(255, 255, 255);
+        -webkit-text-stroke: 1px rgb(0, 0, 0);
+        text-align: center;
+        font-family: 'Press Start 2P', cursive;
+        font-family: 'Pacifico', cursive;
+         }
+         .p2:hover{
+           color: rgb(124, 0, 0);
+           
+         } 
+      .btn-primary {
+        color: #fff;
+        background-color: #1d1e1f;
+        border-color: #ac0b0b;
+        font-family: 'Oswald', sans-serif;
+        color: rgb(160, 17, 17);
+    }    
+    i{font-family: 'Oswald', sans-serif}
+    .hide, .hide + label ~ div {
+        display: none; 
+    }
+    /* вид текста label */
+    .hide + label,
+    .hide:checked + label {
+        padding: 0;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        border-bottom: 1px dotted rgb(0, 0, 0);
+        text-align: justify;
+    }
+    /* вид текста label при активном переключателе */
+    .hide:checked + label {
+        color: rgb(102, 21, 21);
+        border-bottom: 0;
+    }
+    /* когда чекбокс активен показываем блоки с содержанием  */
+    .hide:checked + label + div {
+        display: block; 
+        background: #efefef8f;
+        -moz-box-shadow: inset 3px 3px 10px #23b3bb;
+        -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+        box-shadow: inset 3px 3px 10px #7d8e8f;
+        padding: 10px; 
+    }
+   #imgHover{opacity: 0.9;
+       }
+       #imgHover:hover{
+           opacity: 1;
+       }
+       
+       
+           
+       
+       

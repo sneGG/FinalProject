@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- подключаем jQuery раньше чем бутстрап, иначе работает некорректно-->
+  <script src="js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Press+Start+2P" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/table.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+      <title>Manchester United Unoficial Page</title>
+</head>
+<body>
+        <div class="icon">
+                <a href="#"><img src="img/icon.png" height="100px"; width="100"; alt=""></a>
+            </div>
+            
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="navbar navbar-inverse navbar-fixed-top" >
+                <div class="container">
+                    <div class="navbar-header" >
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu"> <!-- collapse переключает в режим видимости-невидимости-->
+                            <span class="sr-only">Открыть навигацию</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Манчестер Юнайтед</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="responsive-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#team">Команда</a></li>
+                            <li><a href="#media">Видео</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Таблицы <b class="caret"></b></a>
+                                <ul class="dropdown-menu" style="background-color: #000000;" >
+                                    <li><a href="#tablePL">Сезон 17/18</a></li>
+                                    <li><a href="#CL">Лига чемпионов 17/18</a></li>
+                                    <li><a href="#news">Новости</a></li>
+                                    <li><a href="#">Кубок Лиги</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#form">Обратная связь</a></li>
+                        </ul>
+                        <form action="" class="navbar-form navbar-right hidden-sm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="E-mail" value="">
+                                
+                            </div>
+                            <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Пароль" value="">
+                                </div>  
+                            <button type="submit" class="btn btn-primary" slyle="background-color: grey">
+                                <i class="fa fa-sign-in">ВОЙТИ</i> 
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="carousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel" data-slide="0"></li> <!-- data-slide 0, т.к. в JS исчисление идет с 0-->
+            <li data-target="#carousel" data-slide="1"></li>
+            <li data-target="#carousel" data-slide="2"></li>
+            <li data-target="#carousel" data-slide="3"></li>
+        </ol>
+        <!--Слайды-->
+        <div class="carousel-inner" style="margin-top: 50px;">
+            <div class="item active">
+                    <img src="img/rsz_slide1.jpg" alt="">
+                    <div class="carousel-caption">
+                            <h4>Glory glory Man United,
+                                    Glory glory Man United,
+                                    Glory glory Man United,</h4>
+                            <h1>As the Reds go marching on on on!</h1>
+                </div>
+            </div>
+            <div class="item">
+                    <img src="img/rsz_slide2.jpg" alt="">
+                    <div class="carousel-caption">
+                            <h3>Old Trafford</h3>
+                            <p>Домашняя арена Манчестер Юнайтед</p>
+                        </div>
+            </div>
+            <div class="item">
+                    <img src="img/rsz_slide5.jpg" alt="">
+                    <div class="carousel-caption">
+                            <h3>Сезон 1998/99</h3>
+                            <p>В тот год Манчестер Юнайтед выиграл "Требл"</p>
+                        </div>
+            </div>
+            <div class="item">
+                    <img src="img/rsz_slide4.jpg" alt="">
+                    <div class="carousel-caption">
+                            <h3>Давид Де Хеа</h3>
+                            <p>По мнению болельщиков МЮ(и не только)- Лучший вратарь мира!</p>
+                        </div>
+            </div>
+        </div>
+        <!-- Переключение слайдов-->
+        <a href="#carousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#carousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>        
+            </a>
+    </div>
+    <div class="container" style="margin:auto; width: 370px; height: 83px; border: solid 3px rgba(109, 106, 106, 0.534);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgb(51, 50, 50) inset;
+    margin-top: 7px;
+    background-color: rgba(255, 255, 255, 0.466);">
+            <div class="row" style="margin-left: auto; margin-top:10px; color: rgba(255, 255, 255, 0.829)">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><p><i class="fa fa-facebook-official fa-spin fa-4x"></i></p></div></a>
+                    </span>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#"><p><i class="fa fa-vk fa-4x fa-spin"></i></p></div></a>           
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#" style="color: rgb(27, 8, 8)"><p><i class="fa fa-instagram fa-4x fa-spin"></i></p></div></a>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <a href="#" style="color: red"><p><i class="fa fa-youtube fa-4x fa-spin"></i></p></div></a>
+            </div>
+    </div> 
+                <div class="row" style="margin-top: 10px;">
+                        <div style="background: rgba(34, 33, 33, 0.575)"><p class="p1"><a name="media"></a>Лучшие голы текущего и прошлых сезонов</p></div>
+                </div>
+                <div class="container" style="margin:auto; padding-top:30px;">
+                <div class="row">
+                        <div class="col-xs-8 col-sm-6 col-md-4 col-lg-3">
+                            <div class="tumbnail">
+                                    <div class="caption">
+                                            <iframe width="244" height="194" src="https://www.youtube.com/embed/AErp9oc1G2Q" frameborder="0" gesture="media" allowfullscreen></iframe>
+                                    </div>
+                            </div>
+                        </div>
+                        <!--div class="col-xs-8 col-sm-4 col-md-3 col-lg-3">
+                                <div class="tumbnail">
+                                        <div class="caption3">
+                                                <p class="p2"><a name="media"></a>2017/2018</p>                                        </div>
+                                </div>
+                            </div-->
+                    
+                
+                            <div class="col-xs-8 col-sm-6 col-md-4 col-lg-3">
+                            <div class="tumbnail">
+                                    <div class="caption">
+                                            <iframe width="244" height="194" src="https://www.youtube.com/embed/qd-WblDs-Ps" frameborder="0" gesture="media" allowfullscreen></iframe>                                    </div>
+                            </div>
+                        </div>
+                        <!--div class="col-xs-8 col-sm-4 col-md-3 col-lg-3" style="margin: auto;">
+                                <div class="tumbnail">
+                                        <div class="caption3">
+                                                <p class="p2"><a name="media"></a>2015/2016</p>                                        </div>
+                                </div>
+                            </div-->
+                    
+                
+                            <div class="col-xs-8 col-sm-6 col-md-4 col-lg-3">
+                        <div class="tumbnail">
+                                <div class="caption">
+                                    <iframe width="244" height="194" src="https://www.youtube.com/embed/43cfD4Td4y8" frameborder="0" gesture="media" allowfullscreen></iframe>                            
+                                </div>
+                        </div>
+                    </div>
+                    <!--div class="col-xs-8 col-sm-4 col-md-3 col-lg-3" style="margin: auto">
+                            <div class="tumbnail">
+                                    <div class="caption3">
+                                            <p class="p2"><a name="media"></a>2014/2015</p>
+                                    </div>
+                            </div>
+                        </div-->
+              
+                
+                        <div class="col-xs-8 col-sm-6 col-md-4 col-lg-3">
+                            <div class="tumbnail">
+                                    <div class="caption">
+                                        <iframe width="244" height="194" src="https://www.youtube.com/embed/Ex9RMcVT6aM" frameborder="0" gesture="media" allowfullscreen></iframe>                                
+                                    </div>
+                            </div>
+                        </div>
+                        <!--div class="col-xs-8 col-sm-4 col-md-3 col-lg-3" style="margin: auto;">
+                                <div class="tumbnail">
+                                        <div class="caption3">
+                                                <p class="p2"><a name="media"></a>Top 20</p>  
+                                        </div>
+                                </div-->
+                            
+                </div>
+                                    </div>
+                   
+        
+
+        <div class="container" style="margin:auto; padding-top:30px;">
+        <div class="row">
+                <div style="background: rgba(34, 33, 33, 0.575)"><p class="p1"><a name="team"></a>Команда</p></div>
+                <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                    <div class="tumbnail">
+                        <div class="caption1" >
+                                <div id="imgHover"><img src="img/pogba.jpg" "width="294" height="206"" alt=""></div>
+                                <input class="hide" id="hd-1" type="checkbox" >
+                                <label for="hd-1">Поль Погба</label>
+                                <div style="text-align: left"><p><b>Дата рождения</b>
+                                        15 марта 1993 (24 года) <br>
+                                        <b>Место рождения</b>
+                                        Ланьи-Сюр-Марн, Франция<br>
+                                        <b>Гражданство</b>
+                                        Франция<br>
+                                        <b>Контракт до</b>
+                                        июнь 2021 <br>
+                                        <b>Присоединился к клубу</b>
+                                        09 августа 2016 <br>
+                                        <b>Предыдущий клуб</b>
+                                        Ювентус, Италия<br>
+                                        <b>Рост</b>
+                                        191 см<br>
+                                        <b>Вес</b>
+                                        80 кг<br>
+                                        <b>Позиции на поле</b><br>
+                                        
+                                        CM	Центральный полузащитник<br>
+                                        DM	Опорный полузащитник<br>
+                                        AM	Атакующий полузащитник</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                        <div class="tumbnail">
+                            <div class="caption1" >
+
+                                    <div id="imgHover"><img src="img/lukaku.jpg" "width="294" height="206"" alt=""> </div>
+                                    <input class="hide" id="hd-2" type="checkbox" >
+                                    <label for="hd-2">Ромелу Лукаку</label>
+                                    <div style="text-align: left"><p><b>Дата рождения</b>
+                                            13 мая 1993 (24 года)
+                                            <b>Место рождения</b>
+                                            Антверпен, Бельгия<br>
+                                            <b>Гражданство</b>
+                                            Бельгия<br>
+                                            <b>Контракт до</b>
+                                            июнь 2022 <br>
+                                            <b>Присоединился к клубу</b>
+                                            10 июля 2016 <br>
+                                            <b>Предыдущий клуб</b>
+                                            Эвертон, Англия<br>
+                                            <b>Рост</b>
+                                            191 см<br>
+                                            <b>Вес</b>
+                                            89 кг<br>
+                                            <b>Позиции на поле</b><br>
+                                            
+                                            CF	Центральный нападающий</p></div>
+                                </div>
+                        </div>
+                </div>
+        
+                <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4" >
+                            <div class="tumbnail">
+                                <div class="caption1" >
+                                        <div id="imgHover"><img src="img/zlatan.jpg" "width="294" height="206"" alt="">   </div>
+                                        <input class="hide" id="hd-3" type="checkbox" >
+                                        <label for="hd-3">Златан Ибрагимович</label>
+                                        <div style="text-align: left"><p>
+                                                <b>Дата рождения</b>
+                                                03 октября 1981 (36 лет)<br>
+                                                <b>Место рождения</b>
+                                                Мальмё, Швеция<br>
+                                                <b>Гражданство</b>
+                                                Швеция<br>
+                                                <b>Контракт до</b>
+                                                июнь 2018 <br>
+                                                <b>Присоединился к клубу</b>
+                                                01 июля 2016 <br>
+                                                <b>Предыдущий клуб</b>
+                                                ПСЖ, Франция<br>
+                                                <b>Рост</b>
+                                                195 см<br>
+                                                <b>Вес</b>
+                                                95 кг<br>
+                                                <b>Позиции на поле</b><br>
+                                                
+                                                CF	Центральный нападающий</p></div>
+                                    </div>
+                            </div>
+                    </div>
+        </div>
+        </div>
+                 <div class="container" style="margin: auto; padding-top:10px;">
+                        <div class="row">
+                                <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                                <div class="tumbnail">
+                                    <div class="caption1" >
+                                            <div id="imgHover"><img src="img/mata.jpg" "width="294" height="206"" alt=""> </div> 
+                                            <input class="hide" id="hd-4" type="checkbox" >
+                                            <label for="hd-4">Хуан Мата</label>
+                                            <div style="text-align: left"><p>
+                                                <b>Дата рождения</b>
+                                                    28 апреля 1988 (29 лет)<br>
+                                                    <b>Место рождения</b>
+                                                    Бургос, Испания<br>
+                                                    <b>Гражданство</b>
+                                                    Испания<br>
+                                                    <b>Контракт до</b>
+                                                    июнь 2018 <br>
+                                                    <b>Присоединился к клубу</b>
+                                                    24 января 2014 <br>
+                                                    <b>Предыдущий клуб</b>
+                                                    Челси, Англия<br>
+                                                    <b>Рост</b>
+                                                    170 см<br>
+                                                    <b>Вес</b>
+                                                    61 кг<br>
+                                                    <b>Позиции на поле</b><br>
+                                                    
+                                                    AM	Атакующий полузащитник<br>
+                                                    RW	Правый вингер<br></p></div>
+                                        </div>
+                                </div>
+                        </div>
+                    
+                        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                                <div class="tumbnail">
+                                    <div class="caption1" >
+                                            <div id="imgHover"><img src="img/mikitarian.jpg" "width="294" height="206"" alt=""> </div>    
+                                            <input class="hide" id="hd-5" type="checkbox" >
+                                            <label for="hd-5">Генрих Мхитарян</label>
+                                            <div style="text-align: left"><p><b>Дата рождения</b>
+                                                    21 января 1989 (28 лет)
+                                                    <b>Место рождения</b>
+                                                    Ереван, Армения<br>
+                                                    <b>Гражданство</b>
+                                                    Армения<br>
+                                                    <b>Контракт до</b>
+                                                    июнь 2020 <br>
+                                                    <b>Присоединился к клубу</b>
+                                                    06 июля 2016 <br>
+                                                    <b>Предыдущий клуб</b>
+                                                    Боруссия (Дортмунд), Германия<br>
+                                                    <b>Рост</b>
+                                                    177 см<br>
+                                                    <b>Вес</b>
+                                                    75 кг<br>
+                                                    <b>Позиции на поле</b><br>
+                                                    
+                                                    AM	Атакующий полузащитник<br>
+                                                    RW	Правый вингер<br>
+                                                    LW	Левый вингер</p></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                                <div class="tumbnail">
+                                    <div class="caption1" >
+                                            <div id="imgHover"><img src="img/rashford.jpg" "width="294" height="206"" alt=""></div>    
+                                            <input class="hide" id="hd-6" type="checkbox" >
+                                            <label for="hd-6">Маркус Рашфорд</label>
+                                            <div style="text-align: left"><p>
+                                                    <b>Дата рождения</b>
+                                                    31 октября 1997 (20 лет)br
+                                                    <b>Место рождения</b>
+                                                    Манчестер, Англия<br>
+                                                    <b>Гражданство</b>
+                                                    Англия<br>
+                                                    <b>Контракт до</b>
+                                                    июнь 2020 <br>
+                                                    <b>Присоединился к клубу</b>
+                                                    01 июля 2014 <br>
+                                                    <b>Предыдущий клуб</b>
+                                                    Молодежная академия МЮ<br>
+                                                    <b>Рост</b>
+                                                    180 см<br>
+                                                    <b>Вес</b>
+                                                    65 кг<br>
+                                                    <b>Позиции на поле</b><br>
+                                                    
+                                                    CF	Центральный нападающий<br>
+                                                    SS	Второй нападающий</p></div>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                 </div>
+        <div class="container" style="margin:auto; padding-top:30px;">
+                <div class="row">            
+                        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                                <div class="tumbnail">
+                                    <div class="caption1" >
+                                            <div id="imgHover"><img src="img/matic.jpg" "width="294" height="206"" alt=""> </div>     
+                                            <input class="hide" id="hd-7" type="checkbox" >
+                                            <label for="hd-7">Немания Матич</label>
+                                            <div style="text-align: left"><p><b>Дата рождения</b>
+                                                    01 августа 1988 (29 лет) <br>
+                                                    <b>Место рождения</b>
+                                                    Шабац, Сербия<br>
+                                                    <b>Гражданство</b>
+                                                    Сербия<br>
+                                                    <b>Контракт до</b>
+                                                    июнь 2020 <br>
+                                                    <b>Присоединился к клубу</b>
+                                                    31 июля 2017 <br>
+                                                    <b>Предыдущий клуб</b>
+                                                    Челси, Англия<br>
+                                                    <b>Рост</b>
+                                                    194 см<br>
+                                                    <b>Вес</b>
+                                                    82 кг<br>
+                                                    <b>Позиции на поле</b><br>
+                                                    
+                                                    DM	Опорный полузащитник<br>
+                                                    CM	Центральный полузащитник</p></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                                <div class="tumbnail">
+                                    <div class="caption1" >
+                                            <div id="imgHover"><img src="img/jones.jpg" "width="294" height="206"" alt="">   </div> 
+                                            <input class="hide" id="hd-8" type="checkbox" >
+                                            <label for="hd-8">Фил Джонс</label>
+                                            <div style="text-align: left"><p><b>Дата рождения</b>
+                                                    21 февраля 1992 (25 лет) <br>
+                                                    <b>Место рождения</b>
+                                                    Престон, Англия<br>
+                                                    <b>Гражданство</b>
+                                                    Англия<br>
+                                                    <b>Контракт до</b>
+                                                    июнь 2019 <br>
+                                                    <b>Присоединился к клубу</b>
+                                                    01 июля 2011 <br>
+                                                    <b>Предыдущий клуб</b>
+                                                    Блэкберн, Англия<br>
+                                                    <b>Рост</b>
+                                                    185 см<br>
+                                                    <b>Вес</b>
+                                                    72 кг<br>
+                                                    <b>Позиции на поле</b><br>
+                                                    
+                                                    CB	Центральный защитник<br>
+                                                    RB	Правый защитник<br>
+                                                    DM	Опорный полузащитник</p></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                                <div class="tumbnail">
+                                    <div class="caption1" >
+                                            <div id="imgHover"><img src="img/smalling.jpg" "width="294" height="206"" alt="">  </div> 
+                                            <input class="hide" id="hd-9" type="checkbox" >
+                                            <label for="hd-9">Крис Смоллинг</label>
+                                            <div style="text-align: left"><p>
+                                                    <b>Дата рождения</b>
+                                                    22 ноября 1989 (27 лет) <br>
+                                                    <b>Место рождения</b>
+                                                    Лондон, Англия<br>
+                                                    <b>Гражданство</b>
+                                                    Англия<br>
+                                                    <b>Контракт до</b>
+                                                    июнь 2019 <br>
+                                                    <b>Присоединился к клубу</b>
+                                                    01 июля 2010 <br>
+                                                    <b>Предыдущий клуб</b>
+                                                    Фулхэм, Англия<br>
+                                                    <b>Рост</b>
+                                                    194 см<br>
+                                                    <b>Вес</b>
+                                                    90 кг<br>
+                                                    <b>Позиции на поле</b><br>
+                                                    
+                                                    CB	Центральный защитник<br>
+                                                    RB	Правый защитник</p></div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+        </div>
+            <div class="container" style="margin:auto; padding-top:30px;">
+                    <div class="row">                
+                            <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                                <div class="tumbnail">
+                                    <div class="caption1" >
+                                            <div id="imgHover"><img src="img/valencia.jpg" "width="294" height="206"" alt="">   </div>  
+                                            <input class="hide" id="hd-10" type="checkbox" >
+                                            <label for="hd-10">Антонио Валенсия</label>
+                                            <div style="text-align: left"><p><b>Дата рождения</b>
+                                                    04 августа 1985 (32 года) <br>
+                                                    <b>Место рождения</b>
+                                                    Нуэва-Лоха, Эквадор<br>
+                                                    <b>Гражданство</b>
+                                                    Эквадор<br>
+                                                    <b>Контракт до</b>
+                                                    июнь 2019 <br>
+                                                    <b>Присоединился к клубу</b>
+                                                    01 июля 2009 <br>
+                                                    <b>Предыдущий клуб</b>
+                                                    Уиган, Англия<br>
+                                                    <b>Рост</b>
+                                                    181 см<br>
+                                                    <b>Вес</b>
+                                                    78 кг<br>
+                                                    <b>Позиции на поле</b><br>
+                                                    
+                                                    RB	Правый защитник<br>
+                                                    RM	Правый полузащитник<br>
+                                                    RW	Правый вингер</p></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                                <div class="tumbnail">
+                                    <div class="caption1" >
+                                            <div id="imgHover"><img src="img/martial.jpg" "width="294" height="206"" alt=""></div>
+                                            <input class="hide" id="hd-11" type="checkbox" >
+                                            <label for="hd-11">Антони Марсиаль</label>
+                                            <div style="text-align: left"><p><b>Дата рождения</b>
+                                                    05 декабря 1995 (21 год) <br>
+                                                    <b>Место рождения</b> 
+                                                    Маси, Франция <br>
+                                                    <b>Гражданство</b>
+                                                    Франция<br>
+                                                    <b>Контракт до</b>
+                                                    июнь 2019 <br>
+                                                    <b>Присоединился к клубу</b>
+                                                    01 сентября 2015 <br>
+                                                    <b>Предыдущий клуб</b>
+                                                    Монако, Франция <br>
+                                                    <b>Рост</b>
+                                                    181 см<br>
+                                                    <b>Вес</b>
+                                                    80 кг<br>
+                                                    <b>Позиции на поле</b><br>
+                                                    
+                                                    CF	Центральный нападающий<br>
+                                                    RW	Правый вингер<br>
+                                                    LW	Левый вингер</p></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-6 col-lg-4">
+                                <div class="tumbnail">
+                                    <div class="caption1" >
+                                            <div id="imgHover"><img src="img/degea.jpg" "width="294" height="206"" alt=""></div>     
+                                            <input class="hide" id="hd-12" type="checkbox" >
+                                            <label for="hd-12">Давид Де Хеа</label>
+                                            <div style="text-align: left"><p ><b>Дата рождения</b>
+                                                    07 ноября 1990 (26 лет)<br>
+                                                    <b>Место рождения</b>
+                                                    Мадрид, Испания<br>
+                                                    <b>Гражданство</b>
+                                                    Испания<br>
+                                                    <b>Контракт до</b>
+                                                    июнь 2019 <br>
+                                                    <b>Присоединился к клубу</b>
+                                                    01 июля 2011 <br>
+                                                    <b>Предыдущий клуб</b>
+                                                    Атлетико Мадрид, Испания<br>
+                                                    <b>Рост</b>
+                                                    193 см<br>
+                                                    <b>Вес</b>
+                                                    82 кг<br>
+                                                    <b>Позиции на поле</b><br>
+                                                    
+                                                    GK	Голкипер</p></div>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+            <div style="background: rgba(34, 33, 33, 0.575)"><p class="p1"><a name="tablePL"></a>Таблица Чемпионата</p></div>
+            <div style="text-align: center"><table cellspacing="0">
+                
+                    <tr>
+                        <th>Команда</th>
+                        <th style="width: 110px;">Игры</th>
+                        <th style="width: 110px">Победы</th>
+                        <th style="width: 110px">Ничьи</th>
+                        <th style="width: 110px">Поражения</th>
+                        <th style="width: 110px">Разница мячей</th>
+                        <th style="width: 70px">Очки</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>Манчестер Сити</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>+29</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                            <td>Манчестер Юнайтед</td>
+                            <td>10</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>+19</td>
+                            <td>23</td>
+                    </tr>
+                    <tr>
+                            <td>Тоттенхем</td>
+                            <td>10</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>+12</td>
+                            <td>20</td>
+                    </tr>
+                    <tr>
+                            <td>Челси</td>
+                            <td>10</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>+8</td>
+                            <td>19</td>
+                    </tr>
+                    <tr>
+                            <td>Арсенал</td>
+                            <td>10</td>
+                            <td>6</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>+6</td>
+                            <td>19</td>
+                    </tr>
+                    <tr>
+                            <td>Ливерпуль</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>+1</td>
+                            <td>16</td>
+                    </tr>
+                    <tr>
+                            <td>Бернли</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>16</td>
+                    </tr>
+                    <tr>
+                            <td>Уотфорд</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>-3</td>
+                            <td>15</td>
+                    </tr>
+                    <tr>
+                            <td>Ньюкасл</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>+1</td>
+                            <td>14</td>
+                    </tr>
+                    <tr>
+                            <td>Саутгемптон</td>
+                            <td>10</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>-1</td>
+                            <td>13</td>
+                    </tr>
+                    <tr>
+                            <td>Лестер</td>
+                            <td>10</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>12</td>
+                    </tr>
+                    <tr>
+                            <td>Брайтон</td>
+                            <td>10</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>-1</td>
+                            <td>12</td>
+                    </tr>
+                    <tr>
+                            <td>Хаддерсфилд</td>
+                            <td>10</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>-6</td>
+                            <td>12</td>
+                    </tr>
+                    <tr>
+                            <td>Стоук</td>
+                            <td>10</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>-9</td>
+                            <td>11</td>
+                    </tr>
+                    <tr>
+                            <td>Вест Бромвич</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>-4</td>
+                            <td>10</td>
+                    </tr>
+                    <tr>
+                            <td>Вест Хэм</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>-9</td>
+                            <td>9</td>
+                    </tr>
+                    <tr>
+                            <td>Суонси</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>6</td>>
+                            <td>-5</td>
+                            <td>8</td>
+                    </tr>
+                    <tr>
+                            <td>Эвертон</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>-13</td>
+                            <td>8</td>
+                    </tr>
+                    <tr>
+                            <td>Борнмут</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>7</td>
+                            <td>-8</td>
+                            <td>7</td>
+                    </tr>
+                    <tr>
+                            <td>Кристал Пэлас</td>
+                            <td>10</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>8</td>
+                            <td>-17</td>
+                            <td>4</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="background: rgba(34, 33, 33, 0.575)"><p class="p1"><a name="CL"></a>Лига Чемпионов</p></div> 
+            <div style="text-align: center"><table cellspacing="0">
+                
+                    <tr>
+                        <th>Команда</th>
+                        <th style="width: 110px;">Игры</th>
+                        <th style="width: 110px">Победы</th>
+                        <th style="width: 110px">Ничьи</th>
+                        <th style="width: 110px">Поражения</th>
+                        <th style="width: 110px">Разница мячей</th>
+                        <th style="width: 70px">Очки</th>
+                        
+                    </tr>
+                    <tr>
+                        <td>Манчестер Юнайтед</td>
+                        <td>4</td>
+                        <td>49</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>+9</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                            <td>Базель</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td>+3</td>
+                            <td>6</td>
+                    </tr>
+                    <tr>
+                            <td>Тоттенхем</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>-3</td>
+                            <td>6</td>
+                    </tr>
+                    <tr>
+                            <td>Бенфика</td>
+                            <td>4</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td>-9</td>
+                            <td>0</td>
+                    </tr>
+                    </table>
+            </div>
+            <div style="background: rgba(34, 33, 33, 0.575)"><p class="p1"><a name="news"></a>Новости</p></div>
+            <div style='margin:auto; background-color: rgba(255, 255, 255, 0.904)'>
+                    <img src="img/jose.jpg" "width="255px" height="180px"" style="float:left; margin:10px 10px 10px 10px;"  alt="">
+                    <p style="margin-left:8px; padding-left:10px;">Жозе Моуринью отказался встречаться с болельщиками «Юнайтед», чтобы обсудить возникшую ситуацию с его обвинениями в адрес трибун «Олд Траффорд».
+                    Ранее объединение болельщиков M.U.S.T. предложило португальцу урегулировать проблему при личной встрече, однако Жозе решил отделаться шуткой.
+                    «Четверть этой планеты болеет за «Манчестер Юнайтед», я физически не смогу встретиться со всеми болельщиками», - цитирует Моуринью Sky Sports.
+                    Жозе также сказал, что для него не является проблемой негативная реакция на его приезд на «Стэмфорд Бридж» со стороны фанатов «Челси».
+                    «Для меня это вообще не проблема, - сказал Моуринью. - Когда я иду по улице, вне агрессивной атмосферы стадиона, я встречаю множество болельщиков «Челси»,
+                     особенно в том районе,
+                     где я живу, и ни один из них не был груб со мной».
+                    «Футбольный стадион - это другое дело. Когда я приезжаю на «Стэмфорд Бридж», я являюсь тренером их соперника, поэтому я воспринимаю любую их реакцию с 
+                    предельным уважением».
+                    Жозе также язвительно прокомментировал то, что все его критики внезапно забывают о том, что в команде травмированы несколько ключевых игроков, анализируя
+                     игру «Манчестер Юнайтед».
+                    «Наверное, это моя ошибка, мне надо было кричать о наших травмах каждую неделю, - приводит слова Моуринью британский телеканал. - Я думаю, что любой другой
+                     тренер говорил бы о Погба каждый день: «Ох, у меня нет Погба! Ох, когда же он вернется?! Ох, 10 матчей без Погба! Весь групповой этап Лиги Чемпионов без Погба!
+                      Все большие матчи - против «Ливерпуля», против «Челси», против «Тоттенхэма» - без Погба!». Я же говорю о Погба только тогда, когда вы меня об этом спрашиваете».
+                                          «Я не думаю, что вы, журналисты и футбольные аналитики, забыли, в какой футбол играла наша команда в начале сезона. Я знаю, что вы это
+                                           помните. Вам просто удобно
+                     притворяться, что мы не играли в яркий футбол, не забивали кучу голов, что это не имеет никакого значения, но это имеет значение! Конечно, нам не хватает 
+                     наших травмированных игроков, и нам не нравится, что, возможно, нам придется сыграть ещё один большой матч без них».</p>
+                </div>
+                
+                    
+            
+            
+            <div>
+                    <form id="form" action="form.php" method="POST" name=" form ">
+                            <input name="name" id="Name" maxlength="20" placeholder="Имя" required />
+                            <input name="email" type="email" id="applicationEmail" maxlength="20" placeholder="E-mail" required />
+                            <input name="telephone" type="Tel" id="applicationTelephone" maxlength="20" placeholder="Телефон" required/>
+                            <input type="text" maxlength="160" id="Name" placeholder="Введите сообщение (160 зн.)" required/>
+                            <button class="applicationButton" type="submit" form="application">Нажмите для связи</button>
+                         </form>
+                        
+            </div>
+
+                    
+                    
+</body>
+<footer>
+                <div style="background: rgba(34, 33, 33, 0.575)"><p class="p1"><a name="tablePL"></a> &copy Евгений Кондратенко.</p></div>
+        
+              </footer>
+
+
+</html>
